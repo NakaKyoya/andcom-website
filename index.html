@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>And.com - 公式サイト</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      color: #333;
+    }
+
+    /* ヘッダー */
+    header {
+      background: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      height: 110px;
+      width: auto;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    /* メインビジュアル */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), #444;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-left: 5px solid #0056b3;
+      padding-left: 15px;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table th {
+      width: 30%;
+      background-color: #f9f9f9;
+    }
+
+    /* ▼▼ ギャラリースライダー ▼▼ */
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 1s ease;
+    }
+
+    .slides img {
+      width: 50%;   /* 2枚並び */
+      flex-shrink: 0;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      .slides img {
+        width: 100%; /* スマホでは1枚表示 */
+      }
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="img/logo_andcom.png" alt="And.comロゴ">
+  <nav>
+    <a href="#home">ホーム</a>
+    <a href="#about">会社概要</a>
+    <a href="#services">事業内容</a>
+    <a href="#gallery">写真</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <h2>電気も！ 配送も！ 音響も！ 困ったらまずは "アンコム" へ！</h2>
+    <p>私たちは 心と技術で 地域(と猫)に 貢献します！</p>
+  </div>
+</section>
+
+<div class="container" id="about">
+  <h2>会社概要</h2>
+  <table>
+    <tr><th>会社名</th><td>And.com</td></tr>
+    <tr><th>代表者</th><td>代表取締役　中　響也</td></tr>
+    <tr><th>所在地</th><td>千葉県柏市高南台3-13-29-202</td></tr>
+    <tr><th>電話番号</th><td>080-9242-0930</td></tr>
+    <tr><th>メールアドレス</th><td>And.com0501@outlook.com</td></tr>
+    <tr><th>事業内容</th><td>電気工事業・軽貨物運送業・音響事業・その他</td></tr>
+  </table>
+</div>
+
+<div class="container" id="services">
+  <h2>事業内容</h2>
+  <ul>
+    <li>１種電気工事士の確かな知識と経験に基づく安心安全な工事をお届け！</li>
+    <li>企業様から個人のお客様まで！様々なニーズに合った安全第一の軽貨物運送！</li>
+    <li>お客様の理想の演出やステージを形に！全力サポート！</li>
+    <li>大手企業には真似できない驚きの提案価格！</li>
+    <li>地域密着型の迅速なアフターサポート！</li>
+  </ul>
+</div>
+
+<div class="container" id="gallery">
+  <h2>施工・業務ギャラリー</h2>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="img/施工写真1.jpg" alt="施工写真1">
+      <img src="img/施工写真2.jpg" alt="施工写真2">
+      <img src="img/施工写真3.jpg" alt="施工写真3">
+      <img src="img/施工写真4.jpg" alt="施工写真4">
+      <img src="img/施工写真5.jpg" alt="施工写真5">
+      <img src="img/施工写真6.jpg" alt="施工写真6">
+      <img src="img/施工写真7.jpg" alt="施工写真7">
+      <img src="img/施工写真8.jpg" alt="施工写真8">
+      <img src="img/施工写真9.jpg" alt="施工写真9">
+      <img src="img/施工写真10.jpg" alt="施工写真10">
+      <img src="img/施工写真11.jpg" alt="施工写真11">
+      <img src="img/施工写真12.jpg" alt="施工写真12">
+      <img src="img/施工写真13.jpg" alt="施工写真13">
+      <img src="img/施工写真14.jpg" alt="施工写真14">
+    </div>
+  </div>
+</div>
+
+<footer id="contact">
+  <p>お問い合わせはメールまたはお電話で承ります。</p>
+  <p>メール：And.com0501@outlook.com</p>
+  <p>電話：080-9242-0930</p>
+  <p>&copy; 2026 And.com All Rights Reserved.</p>
+</footer>
+
+<script>
+  const slides = document.querySelector('.slides');
+  const slideImages = document.querySelectorAll('.slides img');
+  let index = 0;
+
+  function updateSlide() {
+    slides.style.transform = `translateX(${-index * 50}%)`;
+  }
+
+  // 5秒ごとにスライド
+  setInterval(() => {
+    index = (index + 1) % (slideImages.length - 1);
+    updateSlide();
+  }, 5000);
+</script>
+
+</body>
+</html>
